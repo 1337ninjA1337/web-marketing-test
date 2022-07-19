@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Header/Logo</h1>
+        </header>
+        <nav>
+            <%= htmlWebpackPlugin.options.nav %>
+        </nav>
+        <div class="breadcrumbs">
+            <%= htmlWebpackPlugin.options.breadcrumbs %>
+        </div>
+        <form action="#">
+            <div class="form-header">
+                <h3>Results Found</h3>
+            </div>
+            <hr class="separator"></span>
+            <div class="form-params-first">
+                <div class="form-params-header">
+                    Param 1
+                </div>
+                <div class="checkbox-wrapper" >
+                    <input type="checkbox" class="checkbox-hiden" name="value1" id="value1">
+                    <label for="value1" class="checkbox-default"></label>
+                    <label for="value1" class="checkbox-value">value 1</label>
+                </div>
+                <div class="checkbox-wrapper" >
+                    <input type="checkbox" class="checkbox-hiden" name="value2" id="value2">
+                    <label for="value2" class="checkbox-default"></label>
+                    <label for="value2" class="checkbox-value">value 2</label>
+                </div>
+                <div class="checkbox-wrapper" >
+                    <input type="checkbox" class="checkbox-hiden" name="value3" id="value3">
+                    <label for="value3" class="checkbox-default"></label>
+                    <label for="value3" class="checkbox-value">value 3</label>
+                </div>
+                <div class="checkbox-wrapper" >
+                    <input type="checkbox" class="checkbox-hiden" name="value4" id="value4">
+                    <label for="value4" class="checkbox-default"></label>
+                    <label for="value4" class="checkbox-value">value 4</label>
+                </div>
+                <div class="checkbox-wrapper" >
+                    <input type="checkbox" class="checkbox-hiden" name="value5" id="value5">
+                    <label for="value5" class="checkbox-default"></label>
+                    <label for="value5" class="checkbox-value">value 5</label>
+                </div>
+            </div>
+            <div class="form-params-second">
+                <div class="form-params-header">
+                    Param 2
+                </div>
+                <div class="radio-wrapper" >
+                    <input type="radio" class="radio-hiden" name="value2_1" id="value2_1">
+                    <label for="value2_1" class="radio-default"></label>
+                    <label for="value2_1" class="radio-value">value2_1</label>
+                </div>
+                <div class="radio-wrapper" >
+                    <input type="radio" class="radio-hiden" name="value2_2" id="value2_2">
+                    <label for="value2_2" class="radio-default"></label>
+                    <label for="value2_2" class="radio-value">value2_2</label>
+                </div>
+                <div class="radio-wrapper" >
+                    <input type="radio" class="radio-hiden" name="value2_3" id="value2_3">
+                    <label for="value2_3" class="radio-default"></label>
+                    <label for="value2_3" class="radio-value">value2_3</label>
+                </div>
+            </div>
+            <div class="form-params-third">
+                <div class="form-params-header">
+                    Param 3
+                </div>
+                <div class="inputs">
+                    <input type="text" placeholder="min">
+                    <input type="text" placeholder="max">
+                </div>
+            </div>
+            <div class="form-params-fourth">
+                <div class="form-params-header">
+                    Param 4
+                </div>
+                <input type="text" placeholder="Keyword">
+            </div>
+            <button class="primary">SEARCH</button>
+        </form>
+        <main>
+            <h1>
+                <%= htmlWebpackPlugin.options.h1 %>
+            </h1>
+
+            <div class="schema">
+                <div class="schema-pagination">
+                    <a href="#" class="pages-prew"></a>
+                    <div class="pages">
+                        <a href="#" class="page">1</a>
+                        <a href="#" class="page active">2</a>
+                    </div>
+                    <a href="#" class="pages-next disabled"></a>
+                </div>
+                <div class="schema-sort"> 
+                    <h3>Sort by</h3>
+                    <select class="select">
+                        <%= htmlWebpackPlugin.options.stock_options %>
+                    </select> 
+                </div>
+            </div>
+
+            <%= htmlWebpackPlugin.options.stock %>
+
+                <div class="schema">
+                    <div class="schema-pagination">
+                        <a href="#" class="pages-prew"></a>
+                        <div class="pages">
+                            <a href="#" class="page">1</a>
+                            <a href="#" class="page active">2</a>
+                        </div>
+                        <a href="#" class="pages-next disabled"></a>
+                    </div>
+                    <div class="schema-sort"> 
+                        <h3>Sort by</h3>
+                        <select class="select">
+                            <%= htmlWebpackPlugin.options.stock_options %>
+                        </select> 
+                    </div>
+                </div>
+
+                <div class="page-text">
+                    <%= htmlWebpackPlugin.options.page_text %>
+                </div>
+
+        </main>
+        <footer>
+            <div class="footer-logo">Logo / Company Name</div>
+            <div class="footer-info">
+                <div class="footer-info-adress">
+                    <img src="./img/007-pin 1.png" alt="place">
+                    <div class="default">Company Adress: Lorem ipsum dolor sit amet<br>18600, Netherlands</div>
+                </div>
+                <div class="footer-info-about">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, adipisci! Repellendus autem, perferendis placeat ab esse voluptate animi earum debitis eum recusandae possimus dolores vel id ratione sint asperiores cumque.
+                </div>
+                <div class="footer-info-phone">
+                    <img src="./img/Phone.png" alt="phone">
+                    <div class="default">+38 958    755-00-00</div>
+                </div>
+            </div>
+            <div class="footer-social-icons">
+                <img src="./img/social_icon__facebook.png" alt="fb">
+                <img src="./img/social_icon__instagram.png" alt="inst">
+                <img src="./img/social_icon__twitter.png" alt="twitter">
+                <img src="./img/social_icon__youtube.png" alt="youtube">
+            </div>
+        </footer>
+
+        <div class="privacy">© 2019 - <a href="#">Privacy Policy</a> - <a href="#">Terms and Conditions</a> </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
